@@ -1,0 +1,121 @@
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+
+  background:#ACACAC; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+  display: flex;
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#ACACAC; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  font-size: 25px;
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+}
+a:hover {
+  background:#8b8b8b;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+ul li {
+    list-style-type: none;
+    flex-basis: auto;
+    flex-grow: 1;
+    background: #000;
+    text-align: center;
+  }
+.centered1{
+  position: fixed;
+  top:50%;
+  left:47%;
+  width: 300px;
+  height: 100px;
+  margin: -50px 0 0 -100px;
+  /* background: #ad4242; */
+}
+.centered1 h2{
+  text-align: center;
+}
+.centered2{
+  position: fixed;
+  top:40%;
+  left:41%;
+  width: 500px;
+  height: 200px;
+  margin: -50px 0 0 -100px;
+  /* background: #ad4242; */
+}
+.centered2 h3{
+  text-align: center;
+}
+.supporters-logos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  background-color:#FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.web{
+  margin-left: 80px;
+  display: flex;
+  width: 90%;
+  height: auto;
+  /* background-color:#616a6b; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web div{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 10px;
+  width: 25%;
+  height: fit-content;
+  /* background-color: black; */
+  display: flex;
+}
+.web p{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.anim1{
+  transform: translateY(-10%);
+  opacity: 0;
+  animation: anim1 2.5s forwards;
+}
+@keyframes anim1 {
+  0% {opacity: 0;transform: translateY(-10%);}
+  100% {opacity: 1;transform: translateY(0);}
+}
+.anim2{
+  transform: translateY(-10%);
+  opacity: 0;
+  animation: anim1 2.5s 0.5s forwards;
+}
+@keyframes anim2 {
+  0% {opacity: 0;transform: translateY(-10%);}
+  100% {opacity: 1;transform: translateY(0);}
+}
+.anim3{
+  transform: translateY(-10%);
+  opacity: 0;
+  animation: anim1 2.5s 1s forwards;
+}
+@keyframes anim3 {
+  0% {opacity: 0;transform: translateY(-10%);}
+  100% {opacity: 1;transform: translateY(0);}
+}
+iframe {
+  pointer-events: none;
+  }
